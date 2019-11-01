@@ -1,0 +1,7 @@
+C:\Users\sushil\Desktop\AirTickets\AirTickets.DL\obj\Debug\netcoreapp3.0\AirTickets.DL.AssemblyInfoInputs.cache
+C:\Users\sushil\Desktop\AirTickets\AirTickets.DL\obj\Debug\netcoreapp3.0\AirTickets.DL.AssemblyInfo.cs
+C:\Users\sushil\Desktop\AirTickets\AirTickets.DL\bin\Debug\netcoreapp3.0\AirTickets.DL.deps.json
+C:\Users\sushil\Desktop\AirTickets\AirTickets.DL\bin\Debug\netcoreapp3.0\AirTickets.DL.dll
+C:\Users\sushil\Desktop\AirTickets\AirTickets.DL\bin\Debug\netcoreapp3.0\AirTickets.DL.pdb
+C:\Users\sushil\Desktop\AirTickets\AirTickets.DL\obj\Debug\netcoreapp3.0\AirTickets.DL.dll
+C:\Users\sushil\Desktop\AirTickets\AirTickets.DL\obj\Debug\netcoreapp3.0\AirTickets.DL.pdb

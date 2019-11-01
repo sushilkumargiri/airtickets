@@ -1,0 +1,95 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.0": {
+      "AirTickets.DL/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.0",
+        "compile": {
+          "bin/placeholder/AirTickets.DL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/AirTickets.DL.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AirTickets.DL/1.0.0": {
+      "type": "project",
+      "path": "../AirTickets.DL/AirTickets.DL.csproj",
+      "msbuildProject": "../AirTickets.DL/AirTickets.DL.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.0": [
+      "AirTickets.DL >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\sushil\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\sushil\\Desktop\\AirTickets\\AirTickets.BL\\AirTickets.BL.csproj",
+      "projectName": "AirTickets.BL",
+      "projectPath": "C:\\Users\\sushil\\Desktop\\AirTickets\\AirTickets.BL\\AirTickets.BL.csproj",
+      "packagesPath": "C:\\Users\\sushil\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\sushil\\Desktop\\AirTickets\\AirTickets.BL\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\sushil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://dotnet.myget.org/F/aspnetcore-ci-dev/api/v3/index.json": {},
+        "https://www.myget.org/F/aspnet-contrib/api/v3/index.json": {},
+        "https://www.nuget.org/api/v2/": {}
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "projectReferences": {
+            "C:\\Users\\sushil\\Desktop\\AirTickets\\AirTickets.DL\\AirTickets.DL.csproj": {
+              "projectPath": "C:\\Users\\sushil\\Desktop\\AirTickets\\AirTickets.DL\\AirTickets.DL.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.0": {
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

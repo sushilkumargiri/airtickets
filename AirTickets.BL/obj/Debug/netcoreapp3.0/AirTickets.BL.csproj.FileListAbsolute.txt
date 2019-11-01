@@ -1,0 +1,11 @@
+C:\Users\sushil\Desktop\AirTickets\AirTickets.BL\obj\Debug\netcoreapp3.0\AirTickets.BL.csprojAssemblyReference.cache
+C:\Users\sushil\Desktop\AirTickets\AirTickets.BL\obj\Debug\netcoreapp3.0\AirTickets.BL.AssemblyInfoInputs.cache
+C:\Users\sushil\Desktop\AirTickets\AirTickets.BL\obj\Debug\netcoreapp3.0\AirTickets.BL.AssemblyInfo.cs
+C:\Users\sushil\Desktop\AirTickets\AirTickets.BL\bin\Debug\netcoreapp3.0\AirTickets.BL.deps.json
+C:\Users\sushil\Desktop\AirTickets\AirTickets.BL\bin\Debug\netcoreapp3.0\AirTickets.BL.dll
+C:\Users\sushil\Desktop\AirTickets\AirTickets.BL\bin\Debug\netcoreapp3.0\AirTickets.BL.pdb
+C:\Users\sushil\Desktop\AirTickets\AirTickets.BL\bin\Debug\netcoreapp3.0\AirTickets.DL.dll
+C:\Users\sushil\Desktop\AirTickets\AirTickets.BL\bin\Debug\netcoreapp3.0\AirTickets.DL.pdb
+C:\Users\sushil\Desktop\AirTickets\AirTickets.BL\obj\Debug\netcoreapp3.0\AirTickets.BL.csproj.CopyComplete
+C:\Users\sushil\Desktop\AirTickets\AirTickets.BL\obj\Debug\netcoreapp3.0\AirTickets.BL.dll
+C:\Users\sushil\Desktop\AirTickets\AirTickets.BL\obj\Debug\netcoreapp3.0\AirTickets.BL.pdb
