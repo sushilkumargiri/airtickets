@@ -31,13 +31,17 @@ namespace AirTicket.BL
 
             //create output directory if it does not exist
             Directory.CreateDirectory(_airTicketsSettings.OutputHtmlPath);
+            TryDeleteExistingOutputFiles();//useful when retrying to generate files
+            //Copy css file
+            if (File.Exists(Path.Combine(_airTicketsSettings.ProjectPath, "Resources/style.css")))
+                File.Copy(Path.Combine(_airTicketsSettings.ProjectPath, "Resources/style.css"), Path.Combine(_airTicketsSettings.OutputHtmlPath, "style.css"));
 
             //Read xml and write to html in 2 separate async tasks
             await EnqueueHtmls().ConfigureAwait(false);
             await DequeueAndWriteHtmls().ConfigureAwait(false);
 
             //return converted html files
-            var htmlFiles = _fileReadService.GetXmlFile(_airTicketsSettings.OutputHtmlPath, "*.html");
+            var htmlFiles = _fileReadService.GetFile(_airTicketsSettings.OutputHtmlPath, "*.html");
             return _fileReadService.GetFiles(htmlFiles, _airTicketsSettings.OutputHtmlPath);
         }
 
@@ -76,6 +80,22 @@ namespace AirTicket.BL
             {
                 var htmlData = TransformXMLToHTML(strData, xsltData);
                 HtmlOutputs.Enqueue(htmlData);
+            }
+        }
+
+        private void TryDeleteExistingOutputFiles()
+        {
+            //delete all files from output directory if exists
+            try
+            {
+                foreach (FileInfo file in _fileReadService.GetFile(_airTicketsSettings.OutputHtmlPath, "*.html"))
+                {
+                    file.Delete();
+                }
+            }
+            catch (Exception ex)
+            {
+                //TODÖ: delete can fail because of many reasons. handle it
             }
         }
     }

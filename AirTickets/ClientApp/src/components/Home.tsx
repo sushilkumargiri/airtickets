@@ -28,7 +28,7 @@ class Home extends React.PureComponent<HomeProps> {
       <React.Fragment>
             <p><strong>appsettings.json </strong>file contains input directory path. Change it accordingly.</p>
             <p>
-                <Link className="btn btn-info" to="/fetch-data">Fetch data</Link>
+                <Link className="btn btn-info" to="/fetch-data">Convert XML to HTML</Link>
             </p>
         {this.renderXMLFilesTable()}
       </React.Fragment>

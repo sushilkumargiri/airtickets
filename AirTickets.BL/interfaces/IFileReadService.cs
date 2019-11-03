@@ -9,7 +9,7 @@ namespace AirTicket.BL
 {
     public interface IFileReadService
     {
-        FileInfo[] GetXmlFile(string folder, string ext);
+        FileInfo[] GetFile(string folder, string ext);
         Task<List<string>> ReadXmlFile();
         Task<string> ReadXsltFile();
         List<OutputFileModel> GetFiles(FileInfo[] files, string path);

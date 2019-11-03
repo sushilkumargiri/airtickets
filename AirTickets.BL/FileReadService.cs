@@ -35,7 +35,7 @@ namespace AirTicket.BL
             return objFiles;
         }
 
-        public FileInfo[] GetXmlFile(string folder, string ext)
+        public FileInfo[] GetFile(string folder, string ext)
         {
             DirectoryInfo d = new DirectoryInfo(folder);
             return d.GetFiles(ext);
