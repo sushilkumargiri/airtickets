@@ -1,6 +1,7 @@
 ﻿using AirTicket.BL;
 using AirTicket.DL;
 using AirTickets.BL;
+using Microsoft.Extensions.DependencyInjection;
 using Moq;
 using System;
 using System.Collections.Generic;
@@ -15,9 +16,13 @@ namespace AirTicket.Tests.Business
     public class FileReadWriteTest
     {
         private readonly IAirTicketsSettingsService _airTicketsSettings;
-        public FileReadWriteTest(IAirTicketsSettingsService airTicketsSettings)
+        public FileReadWriteTest()
         {
-            _airTicketsSettings = airTicketsSettings;
+            var services = new ServiceCollection();
+            services.AddTransient<IAirTicketsSettingsService, AirTicketsSettings>();
+
+            var serviceProvider = services.BuildServiceProvider();
+            _airTicketsSettings = serviceProvider.GetService<IAirTicketsSettingsService>();
         }
         [Fact]
         public void Read_Xml_Files()
@@ -41,7 +46,7 @@ namespace AirTicket.Tests.Business
         {
             //init
             var xsltStr = "Xslt string";
-            var xsltPath = Path.Combine(_airTicketsSettings.ProjectPath, "Resources/Computer.xslt");
+            var xsltPath = @"C:\AirTicket\AirTicket\Resources\Computer.xslt";
 
             //Setup
             var mockRepository = new Mock<IFileReadRepository>();
@@ -71,7 +76,7 @@ namespace AirTicket.Tests.Business
             var status = fileWriteService.WriteHtmlFile(xsltStr, fileName);
 
             //assert
-            Assert.Equal(true, status.Result);
+            Assert.True(status.Result);
         }
         [Fact]
 		public void Transform_Xml_and_Xslt_to_Html()
